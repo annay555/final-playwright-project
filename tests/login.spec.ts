@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import test, { chromium, expect } from '@playwright/test';
 
 test('Verify login as a user with a valid credentials', async ({ page }) => {
   //  1. Open Login page
