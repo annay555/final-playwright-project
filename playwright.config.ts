@@ -94,7 +94,3 @@ export default defineConfig({
   //   reuseExistingServer: !process.env.CI,
   // },
 });
-
-function myFunc(someParam: any): void {
-  console.log('not used yet');
-}
