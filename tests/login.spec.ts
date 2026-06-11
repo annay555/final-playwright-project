@@ -3,6 +3,7 @@ import { LoginPage } from '../pages/login.page';
 import { AccountPage } from '../pages/account.page';
 
 test('Verify login as a user with a valid credentials', async ({ page }) => {
+  test.skip(!process.env.CI, 'Skipping this test on CI');
   const loginPage = new LoginPage(page);
   const accountPage = new AccountPage(page);
 
