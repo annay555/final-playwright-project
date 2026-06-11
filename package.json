@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npx playwright test",
     "ui:mode": "npx playwright test --ui",
-    "report": "npx playwright show-report"
+    "report": "npx playwright show-report",
+    "lint": "npx eslint . --fix"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,12 @@
   },
   "homepage": "https://github.com/annay555/final-playwright-project#readme",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.7.0",
-    "typescript": "^6.0.3"
+    "eslint": "^10.4.1",
+    "eslint-plugin-playwright": "^2.10.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.60.1"
   }
 }
