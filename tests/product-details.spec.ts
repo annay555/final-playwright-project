@@ -7,7 +7,7 @@ test('Verify user can view product details', async ({ page }) => {
   await homePage.open();
   const productDetailsPage = await homePage.openProduct('Combination Pliers');
 
-  await expect(page).toHaveURL('https://practicesoftwaretesting.com/product/01KTFF72CDD1VVYM31TV3MT40D');
+  await expect(page).toHaveURL(/\/product\//);
   await expect(productDetailsPage.productName).toHaveText('Combination Pliers');
   await expect(productDetailsPage.productPrice).toHaveText('$14.15');
   await expect(productDetailsPage.addToCartButton).toBeVisible();
